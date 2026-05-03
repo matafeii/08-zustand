@@ -7,7 +7,6 @@
       "DOM",
       "DOM.Iterable"
     ],
-
     "skipLibCheck": true,
     /* Bundler mode */
     "jsx": "preserve",
@@ -21,6 +20,8 @@
         "name": "next"
       }
     ],
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
     /* Linting */
     "noUnusedLocals": true,
     "noUnusedParameters": true,
@@ -28,13 +29,14 @@
     "noFallthroughCasesInSwitch": true,
     "allowJs": true,
     "strict": false,
-    "incremental": true,
-    "esModuleInterop": true,
-    "resolveJsonModule": true
+    "incremental": true
   },
   "include": [
     "next-env.d.ts",
-    "src",
+    "app",
+    "components",
+    "lib",
+    "types",
     ".next/types/**/*.ts"
   ],
   "exclude": [
