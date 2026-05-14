@@ -5,4 +5,3 @@ const NoteDetailsError = ({ error }: { error: Error }) => {
 };
 
 export default NoteDetailsError;
-

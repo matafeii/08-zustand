@@ -13,4 +13,3 @@ const TanStackProvider = ({ children }: { children: ReactNode }) => {
 };
 
 export default TanStackProvider;
-

@@ -1,6 +1,10 @@
-import { HydrationBoundary, QueryClient, dehydrate } from "@tanstack/react-query";
+import {
+  HydrationBoundary,
+  QueryClient,
+  dehydrate,
+} from "@tanstack/react-query";
 import NotesFilterClient from "./NotesFilter.client";
-import { fetchNotes } from "../../../lib/api";
+import { fetchNotes } from "../../../../lib/api";
 
 const PER_PAGE = 12;
 
@@ -30,4 +34,3 @@ export default async function NotesFilterPage({
     </HydrationBoundary>
   );
 }
-

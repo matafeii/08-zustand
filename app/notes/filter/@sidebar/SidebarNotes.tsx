@@ -23,4 +23,3 @@ const SidebarNotes = () => {
 };
 
 export default SidebarNotes;
-
