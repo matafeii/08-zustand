@@ -11,10 +11,10 @@ const PER_PAGE = 12;
 export default async function NotesFilterPage({
   params,
 }: {
-  params: Promise<{ tag: string[] }>;
+  params: Promise<{ slug: string[] }>;
 }) {
-  const { tag: tagParts } = await params;
-  const tag = tagParts?.[0] ?? "all";
+  const { slug } = await params;
+  const tag = slug?.[0] ?? "all";
 
   const queryClient = new QueryClient();
 
