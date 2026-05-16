@@ -11,6 +11,7 @@ type Props = {
   params: Promise<{ id: string }>;
 };
 
+const siteUrl = "https://notehub.com";
 const ogImage = "https://ac.goit.global/fullstack/react/notehub-og-meta.jpg";
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -26,7 +27,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: `${note.title} | NoteHub`,
       description,
-      url: `/notes/${id}`,
+      url: `${siteUrl}/notes/${id}`,
       images: [
         {
           url: ogImage,

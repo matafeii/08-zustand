@@ -6,6 +6,8 @@ import Footer from "../components/Footer/Footer";
 import TanStackProvider from "../components/TanStackProvider/TanStackProvider";
 import "./globals.css";
 
+const siteUrl = "https://notehub.com";
+
 const roboto = Roboto({
   subsets: ["latin"],
   weight: ["400", "500", "700"],
@@ -14,6 +16,7 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: "NoteHub",
   description:
     "NoteHub is a simple application for creating, searching, and organizing personal notes.",
@@ -21,6 +24,7 @@ export const metadata: Metadata = {
     title: "NoteHub",
     description:
       "Create, search, and organize personal notes in one clean workspace.",
+    url: siteUrl,
     images: [
       {
         url: "https://ac.goit.global/fullstack/react/notehub-og-meta.jpg",

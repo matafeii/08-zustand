@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import css from "./NotFound.module.css";
 
+const pageUrl = "https://notehub.com/not-found";
+
 export const metadata: Metadata = {
   title: "404 - Page not found | NoteHub",
   description:
@@ -9,7 +11,7 @@ export const metadata: Metadata = {
     title: "404 - Page not found | NoteHub",
     description:
       "This NoteHub page does not exist. Return to the notes list or home page.",
-    url: "/not-found",
+    url: pageUrl,
     images: [
       {
         url: "https://ac.goit.global/fullstack/react/notehub-og-meta.jpg",

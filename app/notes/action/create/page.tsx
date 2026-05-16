@@ -2,9 +2,10 @@ import type { Metadata } from "next";
 import NoteForm from "../../../../components/NoteForm/NoteForm";
 import css from "./CreateNote.module.css";
 
+const siteUrl = "https://notehub.com";
 const pageTitle = "Create note | NoteHub";
 const pageDescription = "Create a new personal note in NoteHub.";
-const pageUrl = "/notes/action/create";
+const pageUrl = `${siteUrl}/notes/action/create`;
 const ogImage = "https://ac.goit.global/fullstack/react/notehub-og-meta.jpg";
 
 export const metadata: Metadata = {

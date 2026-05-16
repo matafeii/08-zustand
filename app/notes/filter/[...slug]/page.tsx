@@ -8,6 +8,7 @@ import NotesClient from "./Notes.client";
 import { fetchNotes } from "../../../../lib/api";
 
 const PER_PAGE = 12;
+const siteUrl = "https://notehub.com";
 const ogImage = "https://ac.goit.global/fullstack/react/notehub-og-meta.jpg";
 
 type Props = {
@@ -26,7 +27,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const filterLabel = getFilterLabel(tag);
   const title = `${filterLabel} notes | NoteHub`;
   const description = `Browse ${filterLabel.toLowerCase()} notes in NoteHub.`;
-  const url = `/notes/filter/${tag}`;
+  const url = `${siteUrl}/notes/filter/${tag}`;
 
   return {
     title,
